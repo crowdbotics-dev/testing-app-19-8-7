@@ -137,8 +137,8 @@ jobs:
           path: android/app/build/outputs/bundle/release/app-release.aab
 
       - run:
-          name: Create and push a new $MOBILE_LANE build to Play Store
-          command: bundle exec fastlane $MOBILE_LANE
+          name: Create and push a new internal build to Play Store
+          command: bundle exec fastlane internal
           working_directory: android
 
       - run:
